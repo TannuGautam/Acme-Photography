@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+main{
+    max-width: 900px;
+    margin:auto;
+    box-shadow: 30px 0px 40px rgb(0 0 0 / 10%), -30px 0px 40px rgb(0 0 0 / 10%);
+}
+
+#landing{
+    background: #fff;
+}
+
+#landing-text h1{
+    font-weight: 50;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+#landing-text h2 {
+    color: #888;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#landing-text{
+    display: flex;
+    flex: 0 1 40vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    height: 50vh;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+#landing-image {
+    background: url(https://source.unsplash.com/De8wMYoSSBc);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+#img {
+    display: block;
+    width: 100%;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: auto;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.caption h3{
+    padding: 1rem;
+}
+
+.caption p{
+    padding: 0.5rem;
+}
+
+@media only screen and (min-width: 500px)
+{
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 700px)
+{
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
